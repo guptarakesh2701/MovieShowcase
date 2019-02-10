@@ -4,3 +4,5 @@ This is simple Movie Library Showcase where user can manage to view and add movi
 
 Copy the content in your local server and run the movie.html file.
 That's it!
+
+Note : I have used free omdbapi key.
