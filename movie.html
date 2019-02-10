@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Library Showcase</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <style>
+      #movies img, #movie img{
+        width:100%;
+      }
+
+      #ViewMovieList{
+        float: right;
+      }
+      @media(min-width:400px){
+        #movies .col-md-3 .well{
+          height: 390px;
+        }
+
+        #movies .col-md-3 img{
+          height:240px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Movie Library Showcase</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="javascript:void(0);" id="ViewMovieList">View Your Library</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    	<div class="jumbotron">
+	    	<h3 class="text-center">Search For Any Movie</h3>
+	    	<form id="searchForm">
+	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+	    	</form>
+	    </div>
+    </div>
+
+    <div class="container">
+      <div id="success_msg"></div>
+    </div><br/>
+
+    <div class="container" id="moviesBlock">
+      <div id="movies" class="row"></div>
+    </div>
+
+    <div class="container">
+      <div id="moviesList" class="row" style="display: none;">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Movie Title</th>
+              <th scope="col">Year</th>
+              <th scope="col">Poster</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>
